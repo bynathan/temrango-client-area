@@ -428,3 +428,13 @@
         }
     }
 }
+
+@media(max-width: 480px){
+    .address{
+        &__options{
+            h1{
+                font-size: 24px;
+            }
+        }
+    }
+}
