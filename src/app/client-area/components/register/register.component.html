@@ -1,0 +1,41 @@
+<div class="register">
+    <div class="register__header">
+        <div>
+            <h1>Cadastro</h1>
+            <svg (click)="closed()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <p>Cadastre-se e tenha benefícios exclusivos como alertas de promoções, cupons de descontos e muito mais. Campos com (*) são obrigatórios.</p>
+    </div>
+    <form class="register__content">
+        <section>
+            <label>
+                <h1>Nome <strong>*</strong></h1>
+                <input type="text" placeholder="ex: João">
+            </label>
+            <label>
+                <h1>Sobrenome <strong>*</strong></h1>
+                <input type="text" placeholder="ex: Da Silva">
+            </label>
+        </section>
+        <section>
+            <label>
+                <h1>Seu e-mail <strong>*</strong></h1>
+                <input type="text" placeholder="joaodasilva@gmail.com">
+            </label>
+        </section>
+        <section>
+            <label>
+                <h1>Crie uma senha <strong>*</strong></h1>
+                <input type="text" placeholder="Com pelo menos 6 caracteres">
+            </label>
+        </section>
+        <label class="condition">
+            <input type="checkbox">
+            <p>Aceito os<a href=""> termos de uso </a>e as<a href=""> politicas de privacidade.</a></p>
+        </label>
+        <input class="submit" type="submit" value="Cadastrar agora">
+    </form>
+</div>

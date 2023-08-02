@@ -1,0 +1,150 @@
+<div class="address">
+    <div class="address__header">
+        <div class="back" [routerLink]="['/client-area']">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9.57 5.93018L3.5 12.0002L9.57 18.0702M20.5 12.0002H3.67" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p>Voltar</p>
+        </div>
+        <div class="leave">
+            <p>Sair</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M17.4417 14.62L20.0017 12.06L17.4417 9.5M9.76172 12.06H19.9317M11.7617 20C7.34172 20 3.76172 17 3.76172 12C3.76172 7 7.34172 4 11.7617 4" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>
+    <div class="address__options">
+        <h1>Seus endereços</h1>
+        <div class="address__options--actual">
+            <div class="address__actual">
+                <div>
+                    <h1>Casa</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="6" viewBox="0 0 26 6" fill="none">
+                        <circle cx="13" cy="3" r="3"/>
+                        <circle cx="23" cy="3" r="3"/>
+                        <circle cx="3" cy="3" r="3"/>
+                    </svg>
+                </div>
+                <p>Avenida João Paulo de Cesas Marinho Alencar, 12458</p>
+                <h2>Bela vista</h2>
+                <section class="action">
+                    <label>
+                        <p>Editar</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M11.0514 3.00002L4.20976 10.2417C3.95142 10.5167 3.70142 11.0584 3.65142 11.4334L3.34309 14.1333C3.23476 15.1083 3.93476 15.775 4.90142 15.6084L7.58476 15.15C7.95976 15.0834 8.48476 14.8084 8.74309 14.525L15.5848 7.28335C16.7681 6.03335 17.3014 4.60835 15.4598 2.86668C13.6264 1.14168 12.2348 1.75002 11.0514 3.00002V3.00002Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.90833 4.2085C10.083 5.32587 10.6238 6.35361 11.4458 7.13037C12.2679 7.90713 13.3245 8.38894 14.45 8.50016M2.5 18.3335H17.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </label>
+                    <label>
+                        <p>Deletar</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 4.98317C14.725 4.70817 11.9333 4.5665 9.15 4.5665C7.5 4.5665 5.85 4.64984 4.2 4.8165L2.5 4.98317M7.08333 4.1415L7.26667 3.04984C7.4 2.25817 7.5 1.6665 8.90833 1.6665H11.0917C12.5 1.6665 12.6083 2.2915 12.7333 3.05817L12.9167 4.1415M15.7083 7.6165L15.1667 16.0082C15.075 17.3165 15 18.3332 12.675 18.3332H7.325C5 18.3332 4.925 17.3165 4.83333 16.0082L4.29167 7.6165M8.60833 13.7498H11.3833M7.91667 10.4165H12.0833" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </label>
+                    <label class="check">
+                        <input type="radio" name="actual" id="" checked>
+                        <p><strong>Endereço principal</strong></p>
+                    </label>
+                </section>
+            </div>
+        </div>
+        <h2>Outros endereço</h2>
+        <div class="address__options--others">
+            <div class="address__others">
+                <div>
+                    <h1>Trabalho</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="6" viewBox="0 0 26 6" fill="none">
+                        <circle cx="13" cy="3" r="3"/>
+                        <circle cx="23" cy="3" r="3"/>
+                        <circle cx="3" cy="3" r="3"/>
+                    </svg>
+                </div>
+                <p>São José Marculino, 57</p>
+                <h2>Alto Guaramiranga</h2>
+                <section class="action">
+                    <label>
+                        <p>Editar</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M11.0514 3.00002L4.20976 10.2417C3.95142 10.5167 3.70142 11.0584 3.65142 11.4334L3.34309 14.1333C3.23476 15.1083 3.93476 15.775 4.90142 15.6084L7.58476 15.15C7.95976 15.0834 8.48476 14.8084 8.74309 14.525L15.5848 7.28335C16.7681 6.03335 17.3014 4.60835 15.4598 2.86668C13.6264 1.14168 12.2348 1.75002 11.0514 3.00002V3.00002Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.90833 4.2085C10.083 5.32587 10.6238 6.35361 11.4458 7.13037C12.2679 7.90713 13.3245 8.38894 14.45 8.50016M2.5 18.3335H17.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </label>
+                    <label>
+                        <p>Deletar</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 4.98317C14.725 4.70817 11.9333 4.5665 9.15 4.5665C7.5 4.5665 5.85 4.64984 4.2 4.8165L2.5 4.98317M7.08333 4.1415L7.26667 3.04984C7.4 2.25817 7.5 1.6665 8.90833 1.6665H11.0917C12.5 1.6665 12.6083 2.2915 12.7333 3.05817L12.9167 4.1415M15.7083 7.6165L15.1667 16.0082C15.075 17.3165 15 18.3332 12.675 18.3332H7.325C5 18.3332 4.925 17.3165 4.83333 16.0082L4.29167 7.6165M8.60833 13.7498H11.3833M7.91667 10.4165H12.0833" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </label>
+                    <label class="check">
+                        <input type="radio" name="actual" id="">
+                        <p><strong>Endereço principal</strong></p>
+                    </label>
+                </section>
+            </div>
+            <div class="address__others">
+                <div>
+                    <h1>Sogra</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="6" viewBox="0 0 26 6" fill="none">
+                        <circle cx="13" cy="3" r="3"/>
+                        <circle cx="23" cy="3" r="3"/>
+                        <circle cx="3" cy="3" r="3"/>
+                    </svg>
+                </div>
+                <p>Ecliedes barroso, 945</p>
+                <h2>Bom sucesso</h2>
+                <section class="action">
+                    <label>
+                        <p>Editar</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M11.0514 3.00002L4.20976 10.2417C3.95142 10.5167 3.70142 11.0584 3.65142 11.4334L3.34309 14.1333C3.23476 15.1083 3.93476 15.775 4.90142 15.6084L7.58476 15.15C7.95976 15.0834 8.48476 14.8084 8.74309 14.525L15.5848 7.28335C16.7681 6.03335 17.3014 4.60835 15.4598 2.86668C13.6264 1.14168 12.2348 1.75002 11.0514 3.00002V3.00002Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.90833 4.2085C10.083 5.32587 10.6238 6.35361 11.4458 7.13037C12.2679 7.90713 13.3245 8.38894 14.45 8.50016M2.5 18.3335H17.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </label>
+                    <label>
+                        <p>Deletar</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 4.98317C14.725 4.70817 11.9333 4.5665 9.15 4.5665C7.5 4.5665 5.85 4.64984 4.2 4.8165L2.5 4.98317M7.08333 4.1415L7.26667 3.04984C7.4 2.25817 7.5 1.6665 8.90833 1.6665H11.0917C12.5 1.6665 12.6083 2.2915 12.7333 3.05817L12.9167 4.1415M15.7083 7.6165L15.1667 16.0082C15.075 17.3165 15 18.3332 12.675 18.3332H7.325C5 18.3332 4.925 17.3165 4.83333 16.0082L4.29167 7.6165M8.60833 13.7498H11.3833M7.91667 10.4165H12.0833" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </label>
+                    <label class="check">
+                        <input type="radio" name="actual" id="">
+                        <p><strong>Endereço principal</strong></p>
+                    </label>
+                </section>
+            </div>
+            <div class="address__others">
+                <div>
+                    <h1>Praia</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="6" viewBox="0 0 26 6" fill="none">
+                        <circle cx="13" cy="3" r="3"/>
+                        <circle cx="23" cy="3" r="3"/>
+                        <circle cx="3" cy="3" r="3"/>
+                    </svg>
+                </div>
+                <p>Morro branco, 945</p>
+                <h2>Bela vista</h2>
+                <section class="action">
+                    <label>
+                        <p>Editar</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M11.0514 3.00002L4.20976 10.2417C3.95142 10.5167 3.70142 11.0584 3.65142 11.4334L3.34309 14.1333C3.23476 15.1083 3.93476 15.775 4.90142 15.6084L7.58476 15.15C7.95976 15.0834 8.48476 14.8084 8.74309 14.525L15.5848 7.28335C16.7681 6.03335 17.3014 4.60835 15.4598 2.86668C13.6264 1.14168 12.2348 1.75002 11.0514 3.00002V3.00002Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.90833 4.2085C10.083 5.32587 10.6238 6.35361 11.4458 7.13037C12.2679 7.90713 13.3245 8.38894 14.45 8.50016M2.5 18.3335H17.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </label>
+                    <label>
+                        <p>Deletar</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 4.98317C14.725 4.70817 11.9333 4.5665 9.15 4.5665C7.5 4.5665 5.85 4.64984 4.2 4.8165L2.5 4.98317M7.08333 4.1415L7.26667 3.04984C7.4 2.25817 7.5 1.6665 8.90833 1.6665H11.0917C12.5 1.6665 12.6083 2.2915 12.7333 3.05817L12.9167 4.1415M15.7083 7.6165L15.1667 16.0082C15.075 17.3165 15 18.3332 12.675 18.3332H7.325C5 18.3332 4.925 17.3165 4.83333 16.0082L4.29167 7.6165M8.60833 13.7498H11.3833M7.91667 10.4165H12.0833" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </label>
+                    <label class="check">
+                        <input type="radio" name="actual" id="">
+                        <p><strong>Endereço principal</strong></p>
+                    </label>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
