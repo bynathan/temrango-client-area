@@ -460,6 +460,9 @@
             justify-content: space-between;
         }
     }
+    .no-row{
+        row-gap: 0px !important;
+    }
 }
 
 @media(max-width: 445px){
