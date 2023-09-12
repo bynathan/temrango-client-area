@@ -88,6 +88,12 @@ input[type="number"] {
       border-radius: 24px
     }
   }
+  &.new-address-modal {
+    max-width: 378px;
+    .modal-content {
+      border-radius: 24px
+    }
+  }
 }
 
 @media(max-width: 575px){
@@ -95,6 +101,9 @@ input[type="number"] {
     margin: 28px auto !important;
     &.profile-modal {
       margin: 28px 15px !important;
+    }
+    &.new-address-modal {
+      margin: 28px auto !important;
     }
   }
 }
@@ -104,6 +113,13 @@ input[type="number"] {
     margin: 0 !important;
     max-width: unset !important;
     &.profile-modal{
+      margin: 0 !important;
+      .modal-content{
+        height: 100vh;
+        border-radius: 0 !important;
+      }
+    }
+    &.new-address-modal {
       margin: 0 !important;
       .modal-content{
         height: 100vh;
