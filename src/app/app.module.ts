@@ -8,6 +8,7 @@ import { ProfileComponent } from './client-area/components/profile/profile.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { RegisterComponent } from './client-area/components/register/register.component';
+import { NewAddressComponent } from './address/components/new-address/new-address.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { RegisterComponent } from './client-area/components/register/register.co
     AddressComponent,
     ProfileComponent,
     RegisterComponent,
+    NewAddressComponent,
   ],
   imports: [
     BrowserModule,

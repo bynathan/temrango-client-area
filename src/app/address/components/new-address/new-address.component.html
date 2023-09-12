@@ -1,0 +1,74 @@
+<div class="new-address">
+    <div class="new-address__header">
+        <div>
+            <h1>Novo endereço</h1>
+            <svg (click)="closed()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <p>Informe um endereço onde deseja receber seu pedido. Campos com (*) são obrigatórios.</p>
+    </div>
+    <form class="new-address__content">
+        <section>
+            <label>
+                <h1>Nome para esse endereço <strong>*</strong></h1>
+                <input type="text" placeholder="Casa">
+            </label>
+        </section>
+        <section class="radio">
+            <h1>Nome para esse endereço</h1>
+            <div>
+                <input type="radio" class="custom-radio" id="radio1" name="radio" checked>
+                <label for="radio1">sim</label>
+                <input type="radio" class="custom-radio" id="radio2" name="radio">
+                <label for="radio2">não</label>
+            </div>
+        </section>
+        <section class="state">
+            <label>
+                <h1>Estado <strong>*</strong></h1>
+                <input type="text" placeholder="CE">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4.07992 8.91016L10.5999 15.4302C11.3699 16.2002 12.6299 16.2002 13.3999 15.4302L19.9199 8.91016" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </label>
+            <label>
+                <h1>Cidade <strong>*</strong></h1>
+                <input type="text" placeholder="Selecione">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4.07992 8.91016L10.5999 15.4302C11.3699 16.2002 12.6299 16.2002 13.3999 15.4302L19.9199 8.91016" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </label>
+        </section>
+        <section>
+            <label>
+                <h1>Bairro <strong>*</strong></h1>
+                <input type="text" placeholder="ex: Centro">
+            </label>
+        </section>
+        <section>
+            <label>
+                <h1>Logradouro <strong>*</strong></h1>
+                <input type="text" placeholder="ex: Rua Paulino Barroso">
+            </label>
+        </section>
+        <section class="small">
+            <label>
+                <h1>Número</h1>
+                <input type="text" placeholder="ex: 1524">
+            </label>
+            <label>
+                <h1>Complemento</h1>
+                <input type="text" placeholder="ex: Alto">
+            </label>
+        </section>
+        <section>
+            <label>
+                <h1>Referência</h1>
+                <input type="text" placeholder="ex: Ao lado da rodoviária">
+            </label>
+        </section>
+        <input class="submit" type="submit" value="Cadastrar endereço">
+    </form>
+</div>
