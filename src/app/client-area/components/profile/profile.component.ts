@@ -48,13 +48,4 @@ export class ProfileComponent {
     }
   }
 
-  /**
-   * @description Condição do focus.
-   *
-   * @author Nathan da Silva Lira
-  */
-
-  public focusCondition:boolean = false;
-
-
 }
