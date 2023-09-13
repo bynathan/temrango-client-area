@@ -132,6 +132,11 @@ input[type="number"] {
         border-radius: 0 !important;
       }
     }
+    &.register-modal{
+      .modal-content{
+        border-radius: 0;
+      }
+    }
     &.delete-address-modal{
       height: 100vh !important;
       display: flex !important;
