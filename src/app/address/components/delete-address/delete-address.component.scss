@@ -1,0 +1,89 @@
+.delete-address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 29px 24px 32px;
+    &__header{
+        display: flex;
+        align-items: center;
+        margin: 0 0 38px 0;
+        h1{
+            color: #292F31;
+            font-family: 'Inter', sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0;
+        }
+        svg{
+            width: 24px;
+            min-width: 24px;
+            height: 24px;
+            min-height: 24px;
+            cursor: pointer;
+            stroke: #292F31;
+            transition: stroke .2s;
+            &:hover{
+                stroke: #05CB95;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 16px;
+        margin: 0 0 56px 0;
+        p{
+            color: #575757;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0;
+            strong{
+                color: #292F31;
+                font-weight: 600;
+            }
+        }
+    }
+    &__action{
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+        input{
+            min-height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-radius: 30px;
+            border: 1px solid #D5D5D5;
+            background: transparent;
+            &:first-child{
+                max-width: 98px;
+                border-radius: 30px;
+                background: #292F31;
+                border: 1px solid #292F31;
+                color: #FFF;
+            }
+        }
+    }
+}
+
+@media(max-width: 480px){
+    .delete-address{
+        padding: 32px 15px 45px;
+        &__header{
+            h1{
+                font-size: 24px;
+            }
+        }
+    }
+}

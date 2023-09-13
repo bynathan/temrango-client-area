@@ -1,0 +1,17 @@
+<div class="delete-address">
+    <div class="delete-address__header">
+        <h1>Excluir endereço</h1>
+        <svg (click)="closed()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L18 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="delete-address__content">
+        <p>O endereço <strong>CASA</strong> será excluído dos seus endereço cadastrados.</p>
+        <p><strong>Deseja mesmo apagar esse endereço? Ao fazer isso ele será excluído de forma definitiva.</strong></p>
+    </div>
+    <div class="delete-address__action">
+        <input type="button" value="Não"(click)="closed()">
+        <input type="button" value="Sim, quero excluir" (click)="closed()">
+    </div>
+</div>

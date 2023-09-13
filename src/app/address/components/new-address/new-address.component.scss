@@ -250,6 +250,10 @@
             cursor: pointer;
             margin: 7px 0 0 0;
             transition: background .2s;
+            &:disabled{
+                background: #D5D5D5 !important;
+                color: #949494 !important;
+            }
             &:hover{
                 background: #0AA77C;
             }
