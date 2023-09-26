@@ -75,29 +75,41 @@ input[type="number"] {
 
 // CODIGO PARA ADICIONAR
 
+@keyframes buttonAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .modal-dialog {
   &.profile-modal {
     max-width: 554px;
     .modal-content {
-      border-radius: 24px
+      border-radius: 24px;
+      height: 86vh;
     }
   }
   &.register-modal {
     max-width: 378px;
     .modal-content {
-      border-radius: 24px
+      border-radius: 24px;
+      height: 86vh;
     }
   }
   &.new-address-modal {
     max-width: 378px;
     .modal-content {
-      border-radius: 24px
+      border-radius: 24px;
+      height: 86vh;
     }
   }
   &.delete-address-modal {
     max-width: 378px;
     .modal-content {
-      border-radius: 24px
+      border-radius: 24px;
     }
   }
 }
@@ -122,6 +134,7 @@ input[type="number"] {
       margin: 0 !important;
       .modal-content{
         height: 100vh;
+        background: #FFF;
         border-radius: 0 !important;
       }
     }
@@ -129,12 +142,15 @@ input[type="number"] {
       margin: 0 !important;
       .modal-content{
         height: 100vh;
+        background: #FFF;
         border-radius: 0 !important;
       }
     }
     &.register-modal{
       .modal-content{
-        border-radius: 0;
+        height: 100vh;
+        background: #FFF;
+        border-radius: 0 !important;
       }
     }
     &.delete-address-modal{

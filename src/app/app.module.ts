@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { RegisterComponent } from './client-area/components/register/register.component';
 import { NewAddressComponent } from './address/components/new-address/new-address.component';
+import { DeleteAddressComponent } from './address/components/delete-address/delete-address.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NewAddressComponent } from './address/components/new-address/new-addres
     ProfileComponent,
     RegisterComponent,
     NewAddressComponent,
+    DeleteAddressComponent,
   ],
   imports: [
     BrowserModule,

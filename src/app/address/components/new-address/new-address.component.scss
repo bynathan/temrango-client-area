@@ -3,6 +3,11 @@
     flex-direction: column;
     align-items: center;
     padding: 40px 24px 32px;
+    height: 86vh;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        width: 0px;
+    }
     &__header{
         display: flex;
         flex-direction: column;
@@ -53,6 +58,9 @@
             display: flex;
             align-items: center;
             column-gap: 14px;
+            &:nth-child(7){
+                margin-bottom: 100px;
+            }
             label{
                 h1{
                     color: #292F31;
@@ -237,25 +245,38 @@
             }
         }
         .submit{
-            min-height: 55px;
-            border-radius: 30px;
-            background: #05CB95;
-            color: #FFF;
-            font-family: 'Roboto', sans-serif;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            border: none;
-            cursor: pointer;
-            margin: 7px 0 0 0;
-            transition: background .2s;
-            &:disabled{
-                background: #D5D5D5 !important;
-                color: #949494 !important;
-            }
-            &:hover{
-                background: #0AA77C;
+            width: 100%;
+            max-width: 378px;
+            background: #FFF;
+            box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.12);
+            border-radius: 20px;
+            padding: 20px 15px;
+            margin: 0 auto;
+            position: fixed;
+            top: calc(86vh - 67px);
+            left: 0;
+            right: 0;
+            animation: buttonAnimation 1.8s ease-in-out;
+            input{
+                min-height: 55px;
+                border-radius: 30px;
+                background: #05CB95;
+                color: #FFF;
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border: none;
+                cursor: pointer;
+                transition: background .2s;
+                &:disabled{
+                    background: #D5D5D5 !important;
+                    color: #949494 !important;
+                }
+                &:hover{
+                    background: #0AA77C;
+                }
             }
         }
     }
@@ -282,7 +303,10 @@
                 margin: 0 0 20px 0;
             }
             .submit{
-                margin: 7px 0 0 0;
+                max-width: unset;
+                top: unset;
+                bottom: 0;
+                border-radius: 20px 20px 0 0;
             }
         }
     }
